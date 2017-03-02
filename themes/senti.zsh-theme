@@ -1,11 +1,7 @@
-# prompt style and colors based on Steve Losh's Prose theme:
-# http://github.com/sjl/oh-my-zsh/blob/master/themes/prose.zsh-theme
-#
-# vcs_info modifications from Bart Trojanowski's zsh prompt:
-# http://www.jukie.net/bart/blog/pimping-out-zsh-prompt
-#
-# git untracked files modification from Brian Carper:
-# http://briancarper.net/blog/570/git-info-in-your-zsh-prompt
+# Forked one of my favourite theme steeef and made color and prompt modifications
+# https://github.com/oh-my-zsh/themes/steeef.zsh-theme
+# 
+# Thanks to the zsh community for giving the terminal superpowers.
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
@@ -26,7 +22,6 @@ if [[ $terminfo[colors] -ge 256 ]]; then
     purple="%F{135}"
     hotpink="%F{161}"
     limegreen="%F{118}"
-    springgreen="%F{35}"
     blue="%F{32}"
 else
     turquoise="%F{cyan}"
@@ -34,6 +29,7 @@ else
     purple="%F{magenta}"
     hotpink="%F{red}"
     limegreen="%F{green}"
+    blue="%F{blue}"
 fi
 
 # enable VCS systems you use
