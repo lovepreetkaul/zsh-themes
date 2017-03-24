@@ -17,20 +17,21 @@ autoload -Uz vcs_info
 
 #use extended color palette if available
 if [[ $terminfo[colors] -ge 256 ]]; then
-    turquoise="%F{81}"
+    turquoise="%F{37}"
     orange="%F{166}"
     purple="%F{135}"
-    hotpink="%F{161}"
-    limegreen="%F{118}"
-    seagreen="%F{83}"
-    blue="%F{32}"
+    red="%F{161}"
+    green="%F{64}"
+    blue="%F{33}"
+    yellow="%F{136}"
 else
     turquoise="%F{cyan}"
     orange="%F{yellow}"
     purple="%F{magenta}"
     hotpink="%F{red}"
-    limegreen="%F{green}"
+    green="%F{green}"
     blue="%F{blue}"
+    yellow="%F{yellow}"
 fi
 
 # enable VCS systems you use
