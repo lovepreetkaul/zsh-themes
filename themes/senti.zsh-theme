@@ -23,14 +23,8 @@ if [[ $terminfo[colors] -ge 256 ]]; then
     hotpink="%F{161}"
     limegreen="%F{118}"
     seagreen="%F{83}"
-    blue="%F{32}"
-else
-    turquoise="%F{cyan}"
-    orange="%F{yellow}"
-    purple="%F{magenta}"
-    hotpink="%F{red}"
-    limegreen="%F{green}"
-    blue="%F{blue}"
+    blue="%F{039}"
+    yell="%F{190}"
 fi
 
 # enable VCS systems you use
@@ -95,5 +89,5 @@ function steeef_precmd {
 add-zsh-hook precmd steeef_precmd
 
 PROMPT=$'
-%{$blue%}%n${PR_RST} at %{$seagreen%}%m${PR_RST} in %{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
+%{$blue%}%n${PR_RST} at %{$orange%}%m${PR_RST} in %{$limegreen%}%~${PR_RST} $vcs_info_msg_0_$(virtualenv_info)
 λ '
